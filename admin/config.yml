@@ -1,44 +1,17 @@
 backend:
   name: git-gateway
-  branch: main # Assicurati che il tuo ramo si chiami main
+  branch: main
 
 media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "home"
-    label: "Home Page"
-    delete: false
-    editor:
-      preview: false
+  - name: "pagine"
+    label: "Pagine"
     files:
-      - name: "testi"
-        label: "Modifica Testi e Prezzi"
-        file: "data/settings.json"
+      - file: "data/settings.json"
+        label: "Home Page"
+        name: "home"
         fields:
-          # --- SEZIONE HERO ---
-          - {label: "Slogan Verde (Eyebrow)", name: "hero_eyebrow", widget: "string"}
-          - {label: "Titolo Principale (H1)", name: "hero_title", widget: "string"}
+          - {label: "Titolo Hero", name: "hero_title", widget: "string"}
           - {label: "Sottotitolo Hero", name: "hero_sub", widget: "text"}
-          
-          # --- SEZIONE PREZZI ---
-          - label: "Listino Prezzi"
-            name: "pricing"
-            widget: "list"
-            fields:
-              - {label: "Nome Pacchetto", name: "name", widget: "string"}
-              - {label: "Importo (€)", name: "amount", widget: "string"}
-              - {label: "Dettaglio (es: al mese)", name: "per", widget: "string"}
-          
-          # --- SEZIONE TESTIMONIANZE ---
-          - label: "Testimonianze Pazienti"
-            name: "testimonials"
-            widget: "list"
-            fields:
-              - {label: "Testo Recensione", name: "text", widget: "text"}
-              - {label: "Nome", name: "author", widget: "string"}
-              - {label: "Dettaglio (Età/Patologia)", name: "detail", widget: "string"}
-
-          # --- CONTATTI ---
-          - {label: "Telefono", name: "contact_phone", widget: "string"}
-          - {label: "Email", name: "contact_email", widget: "string"}
