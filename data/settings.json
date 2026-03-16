@@ -7,6 +7,16 @@
       "name": "pacchetto 1",
       "amount": "90",
       "per": "dettaglio 1"
+    },
+    {
+      "name": "pacchetto 2",
+      "amount": "180",
+      "per": "asd"
+    },
+    {
+      "name": "pacchetto 3",
+      "amount": "320",
+      "per": "dsa"
     }
   ],
   "contact_phone": "123456",
