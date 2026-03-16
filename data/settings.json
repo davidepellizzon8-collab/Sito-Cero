@@ -1,4 +1,18 @@
 {
-  "hero_title": "ciao, è un test",
-  "hero_sub": "dio stra merda"
+  "who_p1": "bio porcodddioooo",
+  "who_p2": "bio 2",
+  "hero_eyebrow": "slogan verde",
+  "pricing": [
+    {
+      "name": "pacchetto 1",
+      "amount": "90",
+      "per": "dettaglio 1"
+    }
+  ],
+  "contact_phone": "123456",
+  "spec_text": "desc banner medico",
+  "hero_title": "titolo 1",
+  "spec_title": "benner medico",
+  "who_title": "chi sono? reccion",
+  "hero_sub": "sottotitolo, cero merda"
 }
