@@ -1,34 +1,12 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manuel Cerello — Nutrizionista & Personal Trainer</title>
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pannello di Controllo</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-  </head>
+</head>
 <body>
-
-  <script>
-    // Questo pezzo gestisce il reindirizzamento dopo il login o la conferma
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-
-    // Questo pezzo (che abbiamo visto prima) carica i testi dal CMS
-    fetch('/data/settings.json')
-      .then(response => response.json())
-      .then(data => {
-        if (data.hero_title) document.querySelector('.hero-title').innerText = data.hero_title;
-        if (data.hero_sub) document.querySelector('.hero-sub').innerText = data.hero_sub;
-      }).catch(err => console.log("Dati CMS non ancora presenti."));
-  </script>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
