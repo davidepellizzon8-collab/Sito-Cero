@@ -6,12 +6,46 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "pagine"
-    label: "Pagine"
+  - name: "home"
+    label: "Home Page"
+    delete: false
+    editor:
+      preview: false
     files:
-      - file: "data/settings.json"
-        label: "Home Page"
-        name: "home"
+      - name: "testi"
+        label: "Modifica Tutto il Sito"
+        file: "data/settings.json"
         fields:
+          # --- HERO ---
+          - {label: "Slogan Verde", name: "hero_eyebrow", widget: "string"}
           - {label: "Titolo Hero", name: "hero_title", widget: "string"}
           - {label: "Sottotitolo Hero", name: "hero_sub", widget: "text"}
+          
+          # --- CHI SONO ---
+          - {label: "Titolo Chi Sono", name: "who_title", widget: "string"}
+          - {label: "Bio Paragrafo 1", name: "who_p1", widget: "text"}
+          - {label: "Bio Paragrafo 2", name: "who_p2", widget: "text"}
+
+          # --- SPECIALIZZAZIONI ---
+          - {label: "Titolo Banner Medico", name: "spec_title", widget: "string"}
+          - {label: "Testo Banner Medico", name: "spec_text", widget: "text"}
+          
+          # --- LISTE (Prezzi e Testimonianze) ---
+          - label: "Listino Prezzi"
+            name: "pricing"
+            widget: "list"
+            fields:
+              - {label: "Nome Pacchetto", name: "name", widget: "string"}
+              - {label: "Importo", name: "amount", widget: "string"}
+              - {label: "Dettaglio", name: "per", widget: "string"}
+          
+          - label: "Testimonianze"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - {label: "Testo", name: "text", widget: "text"}
+              - {label: "Autore", name: "author", widget: "string"}
+              - {label: "Dettaglio Paziente", name: "detail", widget: "string"}
+
+          # --- CONTATTI ---
+          - {label: "Telefono", name: "contact_phone", widget: "string"}
