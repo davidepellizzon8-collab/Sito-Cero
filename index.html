@@ -103,4 +103,401 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(245,240,232,
 .why-card:hover::before{transform:scaleX(1)}
 .why-icon{width:52px;height:52px;border-radius:16px;background:var(--green-wash);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.25rem}
 .why-card h3{font-family:'Lora',serif;font-size:1.2rem;font-weight:600;color:var(--text);margin-bottom:0.6rem}
-.why-card p{font-size:0.875rem;color:var(--text-muted
+.why-card p{font-size:0.875rem;color:var(--text-muted);line-height:1.75}
+
+/* METHOD */
+.method-section{background:var(--green-dark);overflow:hidden}
+.method-section .stitle{color:white}
+.method-section .pill{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.8)}
+.msteps{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin-top:3rem;position:relative}
+.msteps::before{content:'';position:absolute;top:28px;left:6%;right:6%;height:2px;background:rgba(255,255,255,0.12);z-index:0}
+.mstep{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.75rem}
+.mstep-n{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,0.1);border:2px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:900;color:white;transition:background 0.3s}
+.mstep:hover .mstep-n{background:var(--green-light)}
+.mstep h4{font-size:0.82rem;font-weight:800;color:white;line-height:1.3}
+.mstep p{font-size:0.75rem;color:rgba(255,255,255,0.55);line-height:1.6}
+
+/* SPEC */
+.spec-section{background:var(--cream2)}
+.spec-banner{background:var(--white);border-radius:24px;padding:2rem 2.5rem;margin-top:2.5rem;border:1.5px solid var(--green-pale);display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap}
+.spec-icon-big{font-size:2.5rem;flex-shrink:0;margin-top:0.25rem}
+.spec-banner h3{font-family:'Lora',serif;font-size:1.3rem;font-weight:600;color:var(--text);margin-bottom:0.4rem}
+.spec-banner p{font-size:0.9rem;color:var(--text-muted);line-height:1.7}
+.spec-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.75rem}
+.spec-tag{background:var(--green-wash);border:1.5px solid var(--green-pale);color:var(--green-dark);border-radius:50px;font-size:0.75rem;font-weight:700;padding:0.25rem 0.8rem}
+
+/* PRICING */
+.pricing-section{background:var(--white)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.price-card{border-radius:24px;padding:2rem 1.75rem;border:1.5px solid var(--green-pale);background:var(--cream);display:flex;flex-direction:column;transition:transform 0.3s,box-shadow 0.3s}
+.price-card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(42,92,53,0.1)}
+.price-card.feat{background:var(--green-dark);border-color:var(--green-dark);color:white;box-shadow:0 8px 32px rgba(42,92,53,0.22)}
+.top-badge{background:var(--yellow);color:var(--text);font-size:0.65rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:0.2rem 0.75rem;border-radius:50px;width:fit-content;margin-bottom:1rem}
+.pname{font-size:0.7rem;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:var(--green-mid);margin-bottom:1rem}
+.price-card.feat .pname{color:var(--green-pale)}
+.pamount{font-family:'Lora',serif;font-size:3rem;font-weight:600;line-height:1;color:var(--text)}
+.price-card.feat .pamount{color:white}
+.pper{font-size:0.8rem;color:var(--text-muted);margin-bottom:1.5rem}
+.price-card.feat .pper{color:rgba(255,255,255,0.5)}
+.pfeats{list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin-bottom:2rem;flex:1}
+.pfeats li{font-size:0.875rem;color:var(--text-muted);display:flex;align-items:flex-start;gap:0.5rem}
+.price-card.feat .pfeats li{color:rgba(255,255,255,0.75)}
+.pfeats li::before{content:'✓';color:var(--green-light);font-weight:900;flex-shrink:0;font-size:0.85rem}
+.pbtn{display:block;text-align:center;padding:0.85rem;border-radius:50px;font-size:0.78rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border:2px solid var(--green-dark);color:var(--green-dark);transition:background 0.2s,color 0.2s}
+.pbtn:hover{background:var(--green-dark);color:white}
+.price-card.feat .pbtn{background:white;color:var(--green-dark);border-color:white}
+.price-card.feat .pbtn:hover{background:var(--green-pale)}
+
+/* TESTI */
+.testi-section{background:var(--cream)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.testi-card{background:var(--white);border-radius:24px;padding:1.75rem;border:1.5px solid var(--green-pale)}
+.tstars{color:#F5A623;font-size:0.85rem;margin-bottom:0.75rem;letter-spacing:2px}
+.ttext{font-family:'Lora',serif;font-size:0.95rem;font-style:italic;color:var(--text);line-height:1.75;margin-bottom:1.25rem}
+.ttext::before{content:'\201C';color:var(--green-light);font-size:2rem;line-height:0;vertical-align:-0.5rem;margin-right:2px}
+.tauthor{display:flex;align-items:center;gap:0.75rem}
+.tav{width:38px;height:38px;border-radius:50%;background:var(--green-wash);border:2px solid var(--green-pale);display:flex;align-items:center;justify-content:center;font-size:0.78rem;font-weight:800;color:var(--green-dark);flex-shrink:0}
+.tname{font-size:0.82rem;font-weight:800;color:var(--text)}
+.tdetail{font-size:0.72rem;color:var(--text-muted)}
+
+/* CTA */
+.cta-section{background:var(--green-dark);position:relative;overflow:hidden;text-align:center;padding:clamp(5rem,8vw,8rem) clamp(1.5rem,5vw,5rem)}
+.cta-blob{position:absolute;border-radius:50%;background:rgba(255,255,255,0.04)}
+.cta-blob1{width:500px;height:500px;top:-200px;left:-100px}
+.cta-blob2{width:400px;height:400px;bottom:-150px;right:-80px}
+.cta-section .pill{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.8)}
+.cta-section .stitle{color:white;max-width:560px;margin:0.5rem auto 1rem}
+.cta-section .stitle em{color:var(--green-pale)}
+.cta-desc{color:rgba(255,255,255,0.6);max-width:480px;margin:0 auto 2.5rem;font-size:0.95rem;line-height:1.8}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
+.cta-btn{display:inline-flex;align-items:center;gap:0.5rem;background:white;color:var(--green-dark);padding:0.85rem 1.75rem;border-radius:50px;text-decoration:none;font-size:0.8rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;transition:background 0.2s,transform 0.2s;box-shadow:0 4px 20px rgba(0,0,0,0.15)}
+.cta-btn:hover{background:var(--green-pale);transform:translateY(-2px)}
+.cta-sedi{color:rgba(255,255,255,0.4);font-size:0.8rem;font-weight:600;letter-spacing:0.1em}
+
+/* FOOTER */
+footer{background:#1A2E1C;padding:2rem clamp(1.5rem,5vw,5rem);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.flogo{font-family:'Lora',serif;font-size:1rem;font-weight:600;color:rgba(255,255,255,0.65)}
+.flogo span{color:var(--green-light);font-style:italic}
+footer p{font-size:0.72rem;color:rgba(255,255,255,0.3);letter-spacing:0.04em}
+
+/* ANIM */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.reveal{opacity:1;transform:none;transition:opacity 0.65s ease,transform 0.65s ease}
+.reveal.hidden{opacity:0;transform:translateY(28px)}
+.reveal.visible{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-right{padding-bottom:2rem}
+  .who-inner,.why-grid,.testi-grid,.price-grid{grid-template-columns:1fr}
+  .msteps{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="#" id="nav-logo-text"><span class="nav-dot"></span> Manuel Cerello</a>
+  <div class="nav-links">
+    <a href="#chi-sono" id="nav-link-1">Chi sono</a>
+    <a href="#servizi" id="nav-link-2">Servizi</a>
+    <a href="#prezzi" id="nav-link-3">Prezzi</a>
+    <a href="#contatti" class="nav-cta" id="nav-link-cta">Prenota ora</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-blob hero-blob1"></div>
+  <div class="hero-blob hero-blob2"></div>
+  <div class="hero-left">
+    <span class="eyebrow" id="hero-eyebrow">🌿 Nutrizionista & Personal Trainer</span>
+    <h1 class="hero-title" id="hero-title">
+      Vuoi migliorare<br>la tua salute?
+      <span class="punch" id="hero-punch">Ma cosa mangi?</span>
+    </h1>
+    <p class="hero-sub" id="hero-sub">Correggi gli errori nell'alimentazione e inizia a sentirti meglio ogni giorno — in palestra e nella vita.</p>
+    <ul class="check-list" id="hero-checklist">
+      <li><span class="ci">✓</span><span id="hero-check-1">Vuoi <em>perdere peso</em> e sentirti più in forma?</span></li>
+      <li><span class="ci">✓</span><span id="hero-check-2">Ti senti <em>stanca</em> e senza energie?</span></li>
+      <li><span class="ci">✓</span><span id="hero-check-3">Vuoi <em>migliorare</em> la tua alimentazione?</span></li>
+    </ul>
+    <div class="cta-row">
+      <a href="#contatti" class="btn-main" id="hero-btn-main">Prenota la call gratuita</a>
+      <a href="#servizi" class="btn-sec" id="hero-btn-sec">Scopri i servizi</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="food-wrap">
+      <div class="food-circle"></div>
+      <div class="food-emoji" id="hero-emoji">🥗</div>
+      <div class="food-center-label">
+        <span class="food-pct-big" id="stat-main-pct">80%</span>
+        <span class="food-pct-sub" id="stat-main-sub">della salute è nelle tue mani</span>
+      </div>
+      <div class="fbadge">🥗 <span><span class="pct" id="badge-1-pct">40%</span> <span class="lbl" id="badge-1-lbl">alimentazione</span></span></div>
+      <div class="fbadge">🏃‍♀️ <span><span class="pct" id="badge-2-pct">35%</span> <span class="lbl" id="badge-2-lbl">movimento</span></span></div>
+      <div class="fbadge">😴 <span><span class="pct" id="badge-3-pct">15%</span> <span class="lbl" id="badge-3-lbl">sonno & stress</span></span></div>
+      <div class="fbadge">🧬 <span><span class="pct" id="badge-4-pct">10%</span> <span class="lbl" id="badge-4-lbl">genetica</span></span></div>
+    </div>
+
+    <div class="science-note">
+      <p id="sci-note-text">La scienza è chiara: oltre l'<strong>80% delle malattie croniche</strong> è prevenibile con stile di vita e alimentazione corretti — indipendentemente dalla genetica.</p>
+      <p class="sci-source" id="sci-note-source">Fonte: WHO Global Action Plan · Willett et al. Lancet 2019</p>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-pill"><strong id="stat-1-val">+200</strong><span id="stat-1-lbl">pazienti seguite</span></div>
+      <div class="stat-pill"><strong id="stat-2-val">8+</strong><span id="stat-2-lbl">anni esperienza</span></div>
+      <div class="stat-pill"><strong id="stat-3-val">3</strong><span id="stat-3-lbl">sedi</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="who-section" id="chi-sono">
+  <div class="swrap">
+    <div class="who-inner reveal">
+      <div class="who-visual">
+        <div class="who-placeholder" id="who-photo-placeholder">
+          <span>👨‍⚕️</span>
+          <p>Inserisci qui la tua<br>foto professionale</p>
+        </div>
+        <div class="who-badge" id="who-experience-badge"><strong>8+</strong> anni di<br>esperienza</div>
+      </div>
+      <div class="who-text">
+        <span class="pill" id="who-eyebrow">🌿 Chi sono</span>
+        <h2 class="stitle" id="who-title">Ciao, sono <strong>Manuel Cerello</strong></h2>
+        <p id="who-p1">Sono nutrizionista e personal trainer con oltre 8 anni di esperienza. Lavoro principalmente nelle palestre della zona e ho aiutato più di 200 donne a raggiungere i loro obiettivi — non solo estetici, ma di salute vera.</p>
+        <p id="who-p2">La mia particolarità? Unisco alimentazione e allenamento in un unico percorso. Non ti darò una dieta da seguire ciecamente — ti insegnerò a mangiare bene in funzione di chi sei e di come ti alleni.</p>
+        <div class="chips" id="who-chips">
+          <span class="chip">🏋️ Personal Training</span>
+          <span class="chip">🥗 Nutrizione clinica</span>
+          <span class="chip">📍 Spinea</span>
+          <span class="chip">📍 Dolo</span>
+          <span class="chip">💻 Online</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-section" id="servizi">
+  <div class="swrap">
+    <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto">
+      <span class="pill" id="why-eyebrow">💪 Perché scegliermi</span>
+      <h2 class="stitle" id="why-title">Un approccio <em>unico</em>,<br>pensato per te</h2>
+    </div>
+    <div class="why-grid reveal" id="cms-why-container">
+      <div class="why-card">
+        <div class="why-icon" id="why-1-icon">🏋️</div>
+        <h3 id="why-1-title">Palestra + nutrizione</h3>
+        <p id="why-1-text">Sono sia nutrizionista che PT. Il tuo piano alimentare è costruito in funzione dei tuoi allenamenti — non sono due cose separate.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon" id="why-2-icon">🎯</div>
+        <h3 id="why-2-title">Niente diete fotocopia</h3>
+        <p id="why-2-text">Ogni piano parte da te: le tue abitudini, i tuoi gusti, la tua vita. Qualcosa che puoi seguire davvero, non per due settimane.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon" id="why-3-icon">🩺</div>
+        <h3 id="why-3-title">Competenza clinica</h3>
+        <p id="why-3-text">Specializzato in ipercolesterolemia, diabete e iperglicemia. Se hai condizioni specifiche, non sono un ostacolo — le gestisco insieme.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="method-section">
+  <div class="swrap">
+    <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto">
+      <span class="pill" id="method-eyebrow">Il metodo</span>
+      <h2 class="stitle" id="method-title">Come funziona <em>il percorso</em></h2>
+    </div>
+    <div class="msteps reveal" id="cms-method-steps">
+       <div class="mstep"><div class="mstep-n">01</div><h4 id="step-1-h">Call gratuita</h4><p id="step-1-p">20 min per capire la tua situazione e obiettivi</p></div>
+       <div class="mstep"><div class="mstep-n">02</div><h4 id="step-2-h">Valutazione</h4><p id="step-2-p">Analisi completa: esami, storia clinica, composizione</p></div>
+       <div class="mstep"><div class="mstep-n">03</div><h4 id="step-3-h">Piano su misura</h4><p id="step-3-p">Nutrizione + allenamento progettati insieme</p></div>
+       <div class="mstep"><div class="mstep-n">04</div><h4 id="step-4-h">Supporto continuo</h4><p id="step-4-p">Messaggi, aggiornamenti e revisioni periodiche</p></div>
+       <div class="mstep"><div class="mstep-n">05</div><h4 id="step-5-h">Risultati duraturi</h4><p id="step-5-p">Un nuovo modo di vivere l'alimentazione</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="spec-section">
+  <div class="swrap">
+    <div class="reveal">
+      <span class="pill" id="spec-eyebrow">🩺 Specializzazioni cliniche</span>
+      <h2 class="stitle" id="spec-sec-title">Hai una <em>condizione specifica?</em><br>Ci penso io</h2>
+    </div>
+    <div class="spec-banner reveal">
+      <div class="spec-icon-big" id="spec-icon">🫀</div>
+      <div>
+        <h3 id="spec-title">Sono specializzato in patologie metaboliche</h3>
+        <p id="spec-text">Se il tuo medico ti ha parlato di colesterolo alto, glicemia elevata o diabete di tipo 2, posso affiancarti con un percorso nutrizionale mirato — in coordinamento con le tue terapie. Non è un limite, è un punto di partenza.</p>
+        <div class="spec-tags" id="spec-tags-container">
+          <span class="spec-tag">Ipercolesterolemia</span>
+          <span class="spec-tag">Diabete tipo 2</span>
+          <span class="spec-tag">Iperglicemia</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing-section" id="prezzi">
+  <div class="swrap">
+    <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto">
+      <span class="pill" id="price-eyebrow">💶 Investimento</span>
+      <h2 class="stitle" id="price-title">Scegli il percorso<br><em>più adatto a te</em></h2>
+    </div>
+    <div class="price-grid reveal" id="cms-pricing-container"></div>
+  </div>
+</section>
+
+<section class="testi-section">
+  <div class="swrap">
+    <div class="reveal" style="text-align:center;max-width:500px;margin:0 auto">
+      <span class="pill" id="testi-eyebrow">💬 Testimonianze</span>
+      <h2 class="stitle" id="testi-title">Risultati <em>reali</em>,<br>persone reali</h2>
+    </div>
+    <div class="testi-grid reveal" id="cms-testi-container"></div>
+  </div>
+</section>
+
+<section class="cta-section" id="contatti">
+  <div class="cta-blob cta-blob1"></div>
+  <div class="cta-blob cta-blob2"></div>
+  <span class="pill" id="cta-eyebrow">📞 Contattami</span>
+  <h2 class="stitle" id="cta-title">Pronta a <em>sentirti meglio</em><br>ogni giorno?</h2>
+  <p class="cta-desc" id="cta-desc">La prima call è gratuita e senza impegno. Parliamo di te, dei tuoi obiettivi e di come posso aiutarti concretamente.</p>
+  <div class="cta-btns">
+    <a href="tel:3663568228" class="cta-btn" id="contact-phone-link">📞 366 3568228</a>
+    <a href="https://wa.me/393663568228" class="cta-btn" id="contact-whatsapp-link">💬 WhatsApp</a>
+  </div>
+  <p class="cta-sedi" id="cta-locations">Ricevo a · Spinea · Dolo · Online</p>
+</section>
+
+<footer>
+  <div class="flogo" id="footer-logo">Manuel <span>Cerello</span> — Nutrizionista & PT</div>
+  <p id="footer-credits">© 2026 · nutritionmanu@gmail.com · 366 3568228</p>
+</footer>
+
+<script>
+/* 1. ANIMAZIONI ORIGINALI */
+document.querySelectorAll('.reveal').forEach(el=>el.classList.add('hidden'));
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){
+      e.target.style.transitionDelay=(i*0.08)+'s';
+      e.target.classList.remove('hidden');
+      e.target.classList.add('visible');
+    }
+  });
+},{threshold:0.05,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+/* 2. GESTIONE IDENTITY REDIRECT */
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+
+/* 3. MOTORE CARICAMENTO DATI CMS */
+async function loadCMSData() {
+  try {
+    const response = await fetch('/data/settings.json');
+    const data = await response.json();
+
+    const updateEl = (id, val, isHTML = false) => {
+        const el = document.getElementById(id);
+        if (el && val) isHTML ? el.innerHTML = val : el.innerText = val;
+    };
+
+    // Titolo Sito
+    if(data.site_title) document.title = data.site_title;
+
+    // Hero
+    updateEl('hero-eyebrow', data.hero_eyebrow);
+    updateEl('hero-title', data.hero_title, true);
+    updateEl('hero-sub', data.hero_sub);
+    updateEl('hero-punch', data.hero_punch);
+    updateEl('hero-check-1', data.hero_check_1, true);
+    updateEl('hero-check-2', data.hero_check_2, true);
+    updateEl('hero-check-3', data.hero_check_3, true);
+
+    // Stats & Badges
+    updateEl('stat-main-pct', data.stat_main_pct);
+    updateEl('stat-main-sub', data.stat_main_sub);
+    updateEl('badge-1-pct', data.badge_1_pct); updateEl('badge-1-lbl', data.badge_1_lbl);
+    updateEl('badge-2-pct', data.badge_2_pct); updateEl('badge-2-lbl', data.badge_2_lbl);
+    updateEl('badge-3-pct', data.badge_3_pct); updateEl('badge-3-lbl', data.badge_3_lbl);
+    updateEl('badge-4-pct', data.badge_4_pct); updateEl('badge-4-lbl', data.badge_4_lbl);
+    updateEl('sci-note-text', data.sci_note_text, true);
+    updateEl('sci-note-source', data.sci_note_source);
+
+    // Chi Sono
+    updateEl('who-title', data.who_title, true);
+    updateEl('who-p1', data.who_p1);
+    updateEl('who-p2', data.who_p2);
+    updateEl('who-experience-badge', data.who_experience_text, true);
+
+    // Specializzazioni
+    updateEl('spec-title', data.spec_title);
+    updateEl('spec-text', data.spec_text);
+
+    // Contatti & Footer
+    if (data.contact_phone) {
+        const phone = data.contact_phone;
+        const cleanPhone = phone.replace(/\s/g, '');
+        const phoneLink = document.getElementById('contact-phone-link');
+        const waLink = document.getElementById('contact-whatsapp-link');
+        if(phoneLink) { phoneLink.innerText = "📞 " + phone; phoneLink.href = "tel:" + cleanPhone; }
+        if(waLink) waLink.href = "https://wa.me/" + cleanPhone.replace('+', '');
+    }
+    updateEl('cta-locations', data.cta_locations);
+    updateEl('footer-credits', data.footer_credits);
+
+    // Prezzi (Loop)
+    if (data.pricing && data.pricing.length > 0) {
+        document.getElementById('cms-pricing-container').innerHTML = data.pricing.map(p => `
+            <div class="price-card ${p.featured ? 'feat' : ''}">
+                ${p.featured ? '<div class="top-badge">Consigliato</div>' : ''}
+                <p class="pname">${p.name}</p>
+                <div class="pamount">€${p.amount}</div>
+                <p class="pper">${p.per}</p>
+                <ul class="pfeats">${(p.features || []).map(f => `<li>${f}</li>`).join('')}</ul>
+                <a href="#contatti" class="pbtn">Prenota</a>
+            </div>
+        `).join('');
+    }
+
+    // Testimonianze (Loop)
+    if (data.testimonials && data.testimonials.length > 0) {
+        document.getElementById('cms-testi-container').innerHTML = data.testimonials.map(t => `
+            <div class="testi-card">
+                <div class="tstars">★★★★★</div>
+                <p class="ttext">${t.text}</p>
+                <div class="tauthor">
+                    <div class="tav">${t.author.substring(0,2).toUpperCase()}</div>
+                    <div><p class="tname">${t.author}</p><p class="tdetail">${t.detail}</p></div>
+                </div>
+            </div>
+        `).join('');
+    }
+
+  } catch (error) {
+    console.log("In attesa di dati validi dal CMS...");
+  }
+}
+
+loadCMSData();
+</script>
+</body>
+</html>
