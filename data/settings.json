@@ -1,15 +1,15 @@
 {
-  "who_p1": "bio porcodddioooo",
-  "who_p2": "bio 2",
-  "hero_eyebrow": "slogan verde",
+  "who_p1": "Unisci NUTRIZIONE, ALLENAMENTO & NUTRACEUTICA per:\n- Squilibri di carattere metabolico: diabete di tipo 2, insulino resistenza e sindrome metabolica\n- Squilibri dell'intestino, della digestione e del microbiota (disbiosi test)\n- Squilibri a livello della tiroide\n",
+  "who_p2": "Ottieni il fiso adatto a te:\n- Ricomposizione corporea\n- Fase di crescita muscolare\n- Fase di dimagrimento",
+  "hero_eyebrow": "Il miglior percorso di NUTRIZONE e ALLENAMENTO per migliorare la tua salute:",
   "pricing": [
     {
-      "name": "pacchetto 1",
-      "amount": "90",
-      "per": "dettaglio 1"
+      "name": "Piano nutrizionale",
+      "amount": "20",
+      "per": "Prima visita nutrizionale"
     },
     {
-      "name": "pacchetto 2",
+      "name": "togliere",
       "amount": "180",
       "per": "asd"
     },
@@ -19,10 +19,10 @@
       "per": "dsa"
     }
   ],
-  "contact_phone": "123456",
-  "spec_text": "desc banner medico",
-  "hero_title": "titolo 1",
-  "spec_title": "benner medico",
-  "who_title": "chi sono? reccion",
-  "hero_sub": "sottotitolo, cero merda"
+  "contact_phone": "3663568228",
+  "spec_text": "Migliora i tuoi valori senza rinunce estreme, con un piano alimentare su misura\nAttraverso la giusta alimentazione e la giusta integrazione ci prendiamo cura della tua salute",
+  "hero_title": "Dott. Manuel Cerello",
+  "spec_title": "Esami del Sangue",
+  "who_title": "Attraverso la creazione di un piano PERSONALIZZATO sulle tue necessità, avrai tutti gli strumenti necessari per migliorare la tua salute, la tua estetica ed il tuo benessere giornaliero",
+  "hero_sub": "Nutrizionista e Personal Trainer"
 }
