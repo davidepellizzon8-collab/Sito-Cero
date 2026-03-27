@@ -19,12 +19,34 @@ collections:
           # --- HERO ---
           - {label: "Slogan Verde", name: "hero_eyebrow", widget: "string"}
           - {label: "Titolo Hero", name: "hero_title", widget: "string"}
+          - {label: "Testo Evidenziato (Ma cosa mangi?)", name: "hero_punch", widget: "string"}
           - {label: "Sottotitolo Hero", name: "hero_sub", widget: "text"}
+          - {label: "Punto elenco 1", name: "hero_check_1", widget: "string"}
+          - {label: "Punto elenco 2", name: "hero_check_2", widget: "string"}
+          - {label: "Punto elenco 3", name: "hero_check_3", widget: "string"}
           
           # --- CHI SONO ---
           - {label: "Titolo Chi Sono", name: "who_title", widget: "string"}
           - {label: "Bio Paragrafo 1", name: "who_p1", widget: "text"}
           - {label: "Bio Paragrafo 2", name: "who_p2", widget: "text"}
+
+          # --- SERVIZI (Perché Scegliermi) ---
+          - label: "Perché Scegliermi (Carte)"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Icona (Emoji)", name: "icon", widget: "string"}
+              - {label: "Titolo", name: "title", widget: "string"}
+              - {label: "Testo", name: "text", widget: "text"}
+
+          # --- METODO (I 5 Passi) ---
+          - label: "Passi del Metodo"
+            name: "method_steps"
+            widget: "list"
+            fields:
+              - {label: "Numero (es. 01)", name: "num", widget: "string"}
+              - {label: "Titolo", name: "title", widget: "string"}
+              - {label: "Testo", name: "text", widget: "text"}
 
           # --- SPECIALIZZAZIONI ---
           - {label: "Titolo Banner Medico", name: "spec_title", widget: "string"}
@@ -35,9 +57,14 @@ collections:
             name: "pricing"
             widget: "list"
             fields:
+              - {label: "Metti in evidenza (Colore scuro)?", name: "featured", widget: "boolean", default: false}
               - {label: "Nome Pacchetto", name: "name", widget: "string"}
               - {label: "Importo", name: "amount", widget: "string"}
-              - {label: "Dettaglio", name: "per", widget: "string"}
+              - {label: "Dettaglio (es. al mese)", name: "per", widget: "string"}
+              - label: "Cosa include (Punti elenco)"
+                name: "features"
+                widget: "list"
+                field: {label: "Punto", name: "feature", widget: "string"}
           
           - label: "Testimonianze"
             name: "testimonials"
@@ -47,5 +74,9 @@ collections:
               - {label: "Autore", name: "author", widget: "string"}
               - {label: "Dettaglio Paziente", name: "detail", widget: "string"}
 
-          # --- CONTATTI ---
+          # --- CONTATTI E FOOTER ---
+          - {label: "Titolo Contatti", name: "cta_title", widget: "string"}
+          - {label: "Testo Descrittivo Contatti", name: "cta_desc", widget: "text"}
+          - {label: "Sedi", name: "cta_locations", widget: "string"}
           - {label: "Telefono", name: "contact_phone", widget: "string"}
+          - {label: "Testo Footer (Copyright)", name: "footer_credits", widget: "string"}
