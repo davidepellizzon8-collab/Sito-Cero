@@ -16,23 +16,27 @@ collections:
         label: "Modifica Tutto il Sito"
         file: "data/settings.json"
         fields:
+          # --- META ---
+          - {label: "Titolo Scheda Browser", name: "site_title", widget: "string"}
+
           # --- HERO ---
-          - {label: "Slogan Verde", name: "hero_eyebrow", widget: "string"}
-          - {label: "Titolo Hero", name: "hero_title", widget: "string"}
-          - {label: "Testo Evidenziato (Ma cosa mangi?)", name: "hero_punch", widget: "string"}
+          - {label: "Slogan Verde (Sopra il titolo)", name: "hero_eyebrow", widget: "string"}
+          - {label: "Titolo Principale", name: "hero_title", widget: "string"}
+          - {label: "Testo Evidenziato (Punchline)", name: "hero_punch", widget: "string"}
           - {label: "Sottotitolo Hero", name: "hero_sub", widget: "text"}
-          - {label: "Punto elenco 1", name: "hero_check_1", widget: "string"}
-          - {label: "Punto elenco 2", name: "hero_check_2", widget: "string"}
-          - {label: "Punto elenco 3", name: "hero_check_3", widget: "string"}
+          - {label: "Punto Elenco Hero 1", name: "hero_check_1", widget: "string"}
+          - {label: "Punto Elenco Hero 2", name: "hero_check_2", widget: "string"}
+          - {label: "Punto Elenco Hero 3", name: "hero_check_3", widget: "string"}
           
-          # --- CHI SONO ---
-          - {label: "Foto Profilo", name: "who_photo", widget: "image"}
+          # --- CHI SONO (BIO + FOTO) ---
+          - {label: "Foto Profilo Professionale", name: "who_photo", widget: "image"}
           - {label: "Titolo Chi Sono", name: "who_title", widget: "string"}
           - {label: "Bio Paragrafo 1", name: "who_p1", widget: "text"}
           - {label: "Bio Paragrafo 2", name: "who_p2", widget: "text"}
+          - {label: "Testo Badge Esperienza", name: "who_experience_text", widget: "string"}
 
-          # --- SERVIZI (Perché Scegliermi) ---
-          - label: "Perché Scegliermi (Carte)"
+          # --- PERCHÉ SCEGLIERMI (CARTE) ---
+          - label: "Perché Scegliermi (3 Carte)"
             name: "services"
             widget: "list"
             fields:
@@ -40,44 +44,68 @@ collections:
               - {label: "Titolo", name: "title", widget: "string"}
               - {label: "Testo", name: "text", widget: "text"}
 
-          # --- METODO (I 5 Passi) ---
-          - label: "Passi del Metodo"
+          # --- METODO (I 5 PASSI) ---
+          - label: "Passaggi del Metodo"
             name: "method_steps"
             widget: "list"
             fields:
               - {label: "Numero (es. 01)", name: "num", widget: "string"}
               - {label: "Titolo", name: "title", widget: "string"}
-              - {label: "Testo", name: "text", widget: "text"}
+              - {label: "Descrizione", name: "text", widget: "text"}
 
-          # --- SPECIALIZZAZIONI ---
-          - {label: "Titolo Banner Medico", name: "spec_title", widget: "string"}
-          - {label: "Testo Banner Medico", name: "spec_text", widget: "text"}
-          
-          # --- LISTE (Prezzi e Testimonianze) ---
-          - label: "Listino Prezzi"
-            name: "pricing"
-            widget: "list"
+          # --- SPECIALIZZAZIONI CLINICHE ---
+          - {label: "Titolo Sezione Clinica", name: "spec_title", widget: "string"}
+          - {label: "Testo Sezione Clinica", name: "spec_text", widget: "text"}
+
+          # --- PREZZI (3 BLOCCHI FISSI) ---
+          - label: "PIANO 1 (Sinistra)"
+            name: "pricing_1"
+            widget: "object"
             fields:
-              - {label: "Metti in evidenza (Colore scuro)?", name: "featured", widget: "boolean", default: false}
-              - {label: "Nome Pacchetto", name: "name", widget: "string"}
-              - {label: "Importo", name: "amount", widget: "string"}
-              - {label: "Dettaglio (es. al mese)", name: "per", widget: "string"}
-              - label: "Cosa include (Punti elenco)"
+              - {label: "Nome Piano", name: "name", widget: "string"}
+              - {label: "Prezzo (solo numero, senza €)", name: "amount", widget: "string", required: false}
+              - {label: "Dettaglio (es. sessione unica)", name: "per", widget: "string", required: false}
+              - label: "Punti Elenco (Caratteristiche)"
+                name: "features"
+                widget: "list"
+                field: {label: "Punto", name: "feature", widget: "string"}
+
+          - label: "PIANO 2 (Centrale - Evidenziato)"
+            name: "pricing_2"
+            widget: "object"
+            fields:
+              - {label: "Nome Piano", name: "name", widget: "string"}
+              - {label: "Prezzo", name: "amount", widget: "string", required: false}
+              - {label: "Dettaglio", name: "per", widget: "string", required: false}
+              - label: "Punti Elenco (Caratteristiche)"
+                name: "features"
+                widget: "list"
+                field: {label: "Punto", name: "feature", widget: "string"}
+
+          - label: "PIANO 3 (Destra)"
+            name: "pricing_3"
+            widget: "object"
+            fields:
+              - {label: "Nome Piano", name: "name", widget: "string"}
+              - {label: "Prezzo", name: "amount", widget: "string", required: false}
+              - {label: "Dettaglio", name: "per", widget: "string", required: false}
+              - label: "Punti Elenco (Caratteristiche)"
                 name: "features"
                 widget: "list"
                 field: {label: "Punto", name: "feature", widget: "string"}
           
-          - label: "Testimonianze"
+          # --- TESTIMONIANZE ---
+          - label: "Testimonianze Pazienti"
             name: "testimonials"
             widget: "list"
             fields:
-              - {label: "Testo", name: "text", widget: "text"}
-              - {label: "Autore", name: "author", widget: "string"}
-              - {label: "Dettaglio Paziente", name: "detail", widget: "string"}
+              - {label: "Testo Recensione", name: "text", widget: "text"}
+              - {label: "Nome Autore", name: "author", widget: "string"}
+              - {label: "Dettaglio (es. 40 anni)", name: "detail", widget: "string"}
 
           # --- CONTATTI E FOOTER ---
-          - {label: "Titolo Contatti", name: "cta_title", widget: "string"}
-          - {label: "Testo Descrittivo Contatti", name: "cta_desc", widget: "text"}
-          - {label: "Sedi", name: "cta_locations", widget: "string"}
-          - {label: "Telefono", name: "contact_phone", widget: "string"}
-          - {label: "Testo Footer (Copyright)", name: "footer_credits", widget: "string"}
+          - {label: "Titolo Sezione Contatti", name: "cta_title", widget: "string"}
+          - {label: "Descrizione Contatti", name: "cta_desc", widget: "text"}
+          - {label: "Sedi e Zone", name: "cta_locations", widget: "string"}
+          - {label: "Numero di Telefono", name: "contact_phone", widget: "string"}
+          - {label: "Testo Copyright Footer", name: "footer_credits", widget: "string"}
