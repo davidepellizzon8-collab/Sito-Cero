@@ -1,7 +1,10 @@
 {
+  "site_title": "Manuel Cerello",
+  "cta_desc": "Disponibile 7 giorni su 7",
+  "who_experience_text": " ",
   "who_p1": "Unisci NUTRIZIONE, ALLENAMENTO & NUTRACEUTICA per:\n- Squilibri di carattere metabolico: diabete di tipo 2, insulino resistenza e sindrome metabolica\n- Squilibri dell'intestino, della digestione e del microbiota (disbiosi test)\n- Squilibri a livello della tiroide\n",
   "who_p2": "Ottieni il fiso adatto a te:\n- Ricomposizione corporea\n- Fase di crescita muscolare\n- Fase di dimagrimento",
-  "hero_eyebrow": "Il miglior percorso di NUTRIZONE e ALLENAMENTO per migliorare la tua salute:",
+  "hero_eyebrow": "Slogan Verde (Sopra il titolo)",
   "pricing": [
     {
       "name": "Piano nutrizionale",
@@ -19,10 +22,41 @@
       "per": "dsa"
     }
   ],
+  "hero_punch": "Il miglior percorso di NUTRIZONE e ALLENAMENTO per migliorare la tua salute:",
+  "cta_title": "Contatti",
   "contact_phone": "3663568228",
-  "spec_text": "Migliora i tuoi valori senza rinunce estreme, con un piano alimentare su misura\nAttraverso la giusta alimentazione e la giusta integrazione ci prendiamo cura della tua salute",
+  "cta_locations": "Spinea, Dolo",
+  "who_photo": "file:///C:/Users/david/Downloads/_MZ83960.jpg.jpeg",
+  "spec_text": " ",
   "hero_title": "Dott. Manuel Cerello",
-  "spec_title": "Esami del Sangue",
+  "spec_title": " ",
+  "testimonials": [
+    {
+      "author": "Davide",
+      "text": "Mi sono trovato molto bene: piano alimentare personalizzato e facile da seguire, senza restrizioni assurde. Anche gli allenamenti sono ben strutturati e adatti al mio livello. Professionale e sempre disponibile.",
+      "detail": "26 Anni"
+    },
+    {
+      "text": "Ottima esperienza: unisce nutrizione e allenamento in modo efficace. Spiega tutto con chiarezza e adatta il percorso alle esigenze reali. Metodo serio e sostenibile, lo consiglio a chi vuole migliorare senza stress.",
+      "author": "Elisa",
+      "detail": "35 Anni"
+    }
+  ],
+  "hero_check_1": "Vuoi perdere peso e sentirti più in forma?",
+  "footer_credits": " ",
+  "hero_check_2": "Ti senti stanco e senza energie?",
   "who_title": "Attraverso la creazione di un piano PERSONALIZZATO sulle tue necessità, avrai tutti gli strumenti necessari per migliorare la tua salute, la tua estetica ed il tuo benessere giornaliero",
-  "hero_sub": "Nutrizionista e Personal Trainer"
+  "hero_check_3": "Vuoi migliorare la tua alimentazione?",
+  "pricing_1": {
+    "name": "PIANO NUTRIZIONALE",
+    "features": []
+  },
+  "pricing_2": {
+    "name": "PIANO NUTRIZIONALE + PT"
+  },
+  "pricing_3": {
+    "name": "PIANO ONLINE"
+  },
+  "hero_sub": "Nutrizionista e Personal Trainer",
+  "services": []
 }
