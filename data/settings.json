@@ -4,7 +4,7 @@
   "who_experience_text": " ",
   "who_p1": "Unisci NUTRIZIONE, ALLENAMENTO & NUTRACEUTICA per:\n- Squilibri di carattere metabolico: diabete di tipo 2, insulino resistenza e sindrome metabolica\n- Squilibri dell'intestino, della digestione e del microbiota (disbiosi test)\n- Squilibri a livello della tiroide\n",
   "who_p2": "Ottieni il fiso adatto a te:\n- Ricomposizione corporea\n- Fase di crescita muscolare\n- Fase di dimagrimento",
-  "hero_eyebrow": "Slogan Verde (Sopra il titolo)",
+  "hero_eyebrow": "🌿 Nutrizionista & Personal Trainer",
   "pricing": [
     {
       "name": "Piano nutrizionale",
@@ -23,23 +23,28 @@
     }
   ],
   "hero_punch": "Il miglior percorso di NUTRIZONE e ALLENAMENTO per migliorare la tua salute:",
-  "cta_title": "Contatti",
+  "cta_title": "Contattami",
   "contact_phone": "3663568228",
   "cta_locations": "Spinea, Dolo",
-  "who_photo": "file:///C:/Users/david/Downloads/_MZ83960.jpg.jpeg",
+  "who_photo": "/images/_mz83960.jpg.jpeg",
   "spec_text": " ",
   "hero_title": "Dott. Manuel Cerello",
   "spec_title": " ",
   "testimonials": [
     {
       "author": "Davide",
-      "text": "Mi sono trovato molto bene: piano alimentare personalizzato e facile da seguire, senza restrizioni assurde. Anche gli allenamenti sono ben strutturati e adatti al mio livello. Professionale e sempre disponibile.",
+      "text": "Mi sono trovato molto bene: piano alimentare personalizzato, senza restrizioni assurde. Anche gli allenamenti sono ben strutturati e adatti al mio livello. Professionale e sempre disponibile.",
       "detail": "26 Anni"
     },
     {
       "text": "Ottima esperienza: unisce nutrizione e allenamento in modo efficace. Spiega tutto con chiarezza e adatta il percorso alle esigenze reali. Metodo serio e sostenibile, lo consiglio a chi vuole migliorare senza stress.",
       "author": "Elisa",
       "detail": "35 Anni"
+    },
+    {
+      "text": "Professionale, attento e molto chiaro nelle spiegazioni. Il piano alimentare è stato personalizzato sulle mie esigenze e facile da seguire. Consigliato.",
+      "author": "Giovanni",
+      "detail": "40 Anni"
     }
   ],
   "hero_check_1": "Vuoi perdere peso e sentirti più in forma?",
@@ -49,13 +54,27 @@
   "hero_check_3": "Vuoi migliorare la tua alimentazione?",
   "pricing_1": {
     "name": "PIANO NUTRIZIONALE",
-    "features": []
+    "features": [
+      "Valutazione nutrizionale completa",
+      "Piano alimentare personalizzato",
+      "Report scritto dettagliato"
+    ]
   },
   "pricing_2": {
-    "name": "PIANO NUTRIZIONALE + PT"
+    "name": "PIANO NUTRIZIONALE + PT",
+    "features": [
+      "Piano nutrizionale + aggiornamenti",
+      "Scheda allenamento inclusa",
+      "Sessioni di allenamento private"
+    ]
   },
   "pricing_3": {
-    "name": "PIANO ONLINE"
+    "name": "PIANO ONLINE",
+    "features": [
+      "Personal training online",
+      "Piano completo nutrizione + sport",
+      "Revisioni settimanali"
+    ]
   },
   "hero_sub": "Nutrizionista e Personal Trainer",
   "services": []
